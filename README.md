@@ -30,14 +30,16 @@ This project allows users to create strong and secure passwords with customizabl
 
 ##  Screenshot
 
-_Add project screenshot here_
+![Password Generator Screenshot](assets/screenshot.png)
 
----
 
 ##  Project Structure
+```text
 Secure-Password-Generator
 │
 ├── assets
+│   └── screenshot.png
+│
 ├── index.html
 ├── style.css
 ├── script.js
