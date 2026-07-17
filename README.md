@@ -48,7 +48,7 @@ Secure-Password-Generator
 
 ##  Live Demo
 
-Coming soon...
+https://ibrahimesmanur26-png.github.io/secure-password-generator/
 
 
 
