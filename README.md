@@ -30,7 +30,7 @@ This project allows users to create strong and secure passwords with customizabl
 
 ##  Screenshot
 
-<img src="assets/screenshot.png" alt="Secure Password Generator Screenshot" width="800">
+<img src="./assets/screenshot.jpg" alt="Secure Password Generator Screenshot" width="800">
 
 
 ##  Project Structure
