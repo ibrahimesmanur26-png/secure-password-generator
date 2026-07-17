@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:500px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+}
+
+h1{
+    text-align:center;
+    color:white;
+    margin-bottom:30px;
+    font-size:2rem;
+}
+
+.password-box{
+    display:flex;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.password-box input{
+    flex:1;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#ffffff;
+    font-size:16px;
+    outline:none;
+}
+
+.password-box button{
+    width:100px;
+}
+
+button{
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    background:#3b82f6;
+    color:white;
+    font-weight:600;
+    transition:.3s;
+}
+
+button:hover{
+    background:#2563eb;
+    transform:translateY(-2px);
+}
+
+button:active{
+    transform:scale(.97);
+}
+
+#generateBtn{
+    width:100%;
+    padding:16px;
+    font-size:16px;
+    margin-top:25px;
+}
+
+.length-box{
+    display:flex;
+    justify-content:space-between;
+    color:white;
+    margin-bottom:12px;
+}
+
+input[type="range"]{
+    width:100%;
+    margin-bottom:25px;
+    accent-color:#3b82f6;
+}
+
+.options{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.options label{
+    color:white;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+}
+
+.options input{
+    width:18px;
+    height:18px;
+}
+
+.strength{
+    width:100%;
+    height:12px;
+    background:rgba(255,255,255,.2);
+    border-radius:20px;
+    margin-top:25px;
+    overflow:hidden;
+}
+
+#strengthBar{
+    height:100%;
+    width:0%;
+    border-radius:20px;
+    transition:.4s;
+}
+
+#strengthText{
+    text-align:center;
+    margin-top:12px;
+    color:white;
+    font-weight:600;
+}
+
+@media(max-width:550px){
+
+.password-box{
+    flex-direction:column;
+}
+
+.password-box button{
+    width:100%;
+    padding:14px;
+}
+
+.options{
+    grid-template-columns:1fr;
+}
+
+}
+.toast{
+    position:fixed;
+    top:30px;
+    right:30px;
+    background:#22c55e;
+    color:white;
+    padding:15px 22px;
+    border-radius:12px;
+    font-weight:600;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+    opacity:0;
+    transform:translateY(-20px);
+
+    transition:.35s ease;
+
+    pointer-events:none;
+}
+
+.toast.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}

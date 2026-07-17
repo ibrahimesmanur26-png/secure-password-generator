@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Password Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Password Generator</h1>
+
+    <div class="password-box">
+
+        <input
+            type="text"
+            id="password"
+            readonly
+            placeholder="Generate a password">
+
+        <button id="copyBtn">
+            Copy
+        </button>
+
+    </div>
+
+    <div class="length-box">
+
+        <label>Password Length</label>
+
+        <span id="lengthValue">16</span>
+
+    </div>
+
+    <input
+        type="range"
+        id="length"
+        min="8"
+        max="32"
+        value="16">
+
+    <div class="options">
+
+        <label>
+            <input type="checkbox" id="uppercase" checked>
+            Uppercase
+        </label>
+
+        <label>
+            <input type="checkbox" id="lowercase" checked>
+            Lowercase
+        </label>
+
+        <label>
+            <input type="checkbox" id="numbers" checked>
+            Numbers
+        </label>
+
+        <label>
+            <input type="checkbox" id="symbols" checked>
+            Symbols
+        </label>
+
+    </div>
+
+    <button id="generateBtn">
+
+        Generate Password
+
+    </button>
+
+    <div class="strength">
+
+        <div id="strengthBar"></div>
+
+    </div>
+
+    <p id="strengthText"></p>
+
+</div>
+
+<div id="toast" class="toast">
+    ✅ Password copied successfully!
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
