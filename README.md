@@ -34,7 +34,7 @@ This project allows users to create strong and secure passwords with customizabl
 
 
 ##  Project Structure
-```text
+text
 Secure-Password-Generator
 │
 ├── assets
